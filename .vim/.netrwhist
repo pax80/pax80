@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/Users/mircopaccusse/configuration/.vim/color'
+let g:netrw_dirhist_5='/Users/mircopaccusse/configuration/.vim/color/molokai.git'
+let g:netrw_dirhist_4='/Users/mircopaccusse/configuration/.vim/color/molokai.git/colors'
+let g:netrw_dirhist_3='/Users/mircopaccusse/configuration/.vim/color/molokai.git'
+let g:netrw_dirhist_2='/Users/mircopaccusse/configuration/.vim/color'
+let g:netrw_dirhist_1='/Users/mircopaccusse/configuration/.vim/color/molokai.git'
