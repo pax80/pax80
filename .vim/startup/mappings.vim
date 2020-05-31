@@ -90,3 +90,5 @@ autocmd FileType twig imap <leader>a[ [{[  ]}]<ESC>Bhi
 
 nmap ]h <Plug>GitGutterNextHunk
 nmap [h <Plug>GitGutterPrevHunk
+
+nmap <Leader>i :NERDTreeToggle<CR>

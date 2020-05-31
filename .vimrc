@@ -4,14 +4,15 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
-
-syntax on
+let mapleader = ","
+"let g:Powerline_symbols = 'unicode'
+"python from powerline.vim import setup as powerline_setup
+"python powerline_setup()
+"python del powerline_setup
+"syntax on
 
 "============== Custom scripts ===============
-source ~/.vim/after/syntaxcheck.vim
+"source ~/.vim/after/syntaxcheck.vim
 
 
 "============== Filetype stuff ===============
@@ -24,14 +25,14 @@ let NERDTreeDirArrows=1
 
 " Load custom settings
 source ~/.vim/startup/color.vim
-source ~/.vim/startup/php.vim
 "source ~/.vim/startup/commands.vim
 "source ~/.vim/startup/functions.vim
 source ~/.vim/startup/mappings.vim
-source ~/.vim/startup/settings.vim
+" source ~/.vim/startup/settings.vim
 
 " Syntax-specific settings
-source ~/.vim/startup/js.vim
-source ~/.vim/startup/vim.vim
-source ~/.vim/startup/yaml.vim
-source ~/.vim/startup/html.vim
+" source ~/.vim/startup/vim.vim
+" source ~/.vim/startup/yaml.vim
+" source ~/.vim/startup/html.vim
+
+set guifont=Roboto\ Mono\ for\ Powerline:h15
