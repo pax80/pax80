@@ -1,3 +1,5 @@
+nnoremap / /\v
+vnoremap / /\v
 " Unmap the arrow keys
 no <down> ddp
 no <left> <Nop>
@@ -92,3 +94,15 @@ nmap ]h <Plug>GitGutterNextHunk
 nmap [h <Plug>GitGutterPrevHunk
 
 nmap <Leader>i :NERDTreeToggle<CR>
+
+inoremap jk <ESC>
+ " ==============
+ " split windows
+nnoremap <leader>w <C-w>v<C-w>l
+" change to h
+nnoremap <leader>H <C-w>H
+nnoremap <leader>J <C-w>J
+
+
+" adding date
+nmap <leader>d i<esc>:r!date<esc>
