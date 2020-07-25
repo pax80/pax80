@@ -78,8 +78,7 @@ map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 
 "quick pairs
 imap <leader>' ''<ESC>i
-imap <leader>" ""<ESC>i
-imap <leader>( ()<ESC>i
+imap <leader>" ""<ESC>i imap <leader>( ()<ESC>i
 imap <leader>[ []<ESC>i
 
 " replace string contents with recently copied text
