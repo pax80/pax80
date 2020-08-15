@@ -26,6 +26,14 @@ imap <C-Tab> <ESC>:tabnext<CR>
 noremap <F7> :set expandtab!<CR>
 nmap <Leader>h :tabnew %:h<CR>
 
+" Zoom in
+imap <Leader>z <ESC>:vertical resize +80<CR>
+nmap <Leader>z :vertical resize +80<CR>
+imap <Leader>o <ESC>:vertical resize -80<CR>
+nmap <Leader>o :vertical resize -80<CR>
+
+
+
 "turn off search highlighting
 nmap <C-n> :noh<CR>
 
@@ -87,6 +95,10 @@ nmap <Leader>c" "_di"Pa
 nmap <Leader>r' '_di'P
 nmap <Leader>c' '_di'Pa
 
+imap <Leader>s <ESC>:w<Enter>i
+nmap <Leader>s :w<Enter>
+
+
 autocmd FileType twig imap <leader>a[ [{[  ]}]<ESC>Bhi
 
 nmap ]h <Plug>GitGutterNextHunk
@@ -104,4 +116,6 @@ nnoremap <leader>J <C-w>J
 
 
 " adding date
-nmap <leader>d i<esc>:r!date<esc>
+"nmap <leader>p i<esc>:r!date +"%m-%d-%Y %H:%M"<esc>
+nmap <leader>d "=strftime("%m-%d-%Y %H:%M")<CR>p
+imap <leader>d <esc>"=strftime("%m-%d-%Y %H:%M")<CR>pi
