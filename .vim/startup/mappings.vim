@@ -32,7 +32,8 @@ nmap <Leader>z :vertical resize +80<CR>
 imap <Leader>o <ESC>:vertical resize -80<CR>
 nmap <Leader>o :vertical resize -80<CR>
 
-
+" quick quit
+"
 
 "turn off search highlighting
 nmap <C-n> :noh<CR>
@@ -97,6 +98,9 @@ nmap <Leader>c' '_di'Pa
 
 imap <Leader>s <ESC>:w<Enter>i
 nmap <Leader>s :w<Enter>
+"quick quit
+nmap <Leader>e :wq<Enter>
+nmap <Leader>q :q<Enter>
 
 
 autocmd FileType twig imap <leader>a[ [{[  ]}]<ESC>Bhi
@@ -105,17 +109,28 @@ nmap ]h <Plug>GitGutterNextHunk
 nmap [h <Plug>GitGutterPrevHunk
 
 nmap <Leader>i :NERDTreeToggle<CR>
+nmap <Leader>x :%s/></>\r</g<CR>
 
 inoremap jk <ESC>
  " ==============
  " split windows
 nnoremap <leader>w <C-w>v<C-w>l
+nnoremap <leader>b <C-w>s<C-w>j
 " change to h
 nnoremap <leader>H <C-w>H
 nnoremap <leader>J <C-w>J
 
+nnoremap ,post :r ~/development/base_diagrams/observer/support/postmortem.md<CR>
+nnoremap ,daily :r ~/development/daily/base.md<CR>
+nnoremap ,can :r ~/development/manager/ttt/base_assignemnt.md<CR>
+nnoremap ,feedback :r ~/development/manager/ttt/base_feedback.md<CR>
+nnoremap ,interview :r ~/development/manager/ttt/base_interview.md<CR>
 
 " adding date
 "nmap <leader>p i<esc>:r!date +"%m-%d-%Y %H:%M"<esc>
-nmap <leader>d "=strftime("%m-%d-%Y %H:%M")<CR>p
-imap <leader>d <esc>"=strftime("%m-%d-%Y %H:%M")<CR>pi
+nmap <leader>d "=strftime("%Y-%m-%d")<CR>p
+nmap <leader>D "=strftime("%Y-%m-%d %H:%M")<CR>p
+imap <leader>d <esc>"=strftime("%Y-%m-%d")<CR>p
+imap <leader>D <esc>"=strftime("%Y-%m-%d %H:%M")<CR>pi
+
+vimgrep rizzo /Users/mircopaccusse/development/base_diagrams/**
