@@ -5,8 +5,11 @@ export ZSH=/Users/mircopaccusse/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
 ZSH_THEME="bullet-train"
+#ZSH_THEME="agnoster"
+#ZSH_THEME="robbyrussell"
+#ZSH_THEME="fox"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 # Uncomment the following line to use hyphen-insensitive completion. Case
@@ -67,7 +70,7 @@ source $ZSH/oh-my-zsh.sh
 if [ -f '/Users/mircopaccusse/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/mircopaccusse/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/mircopaccusse/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/mircopaccusse/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-export PATH="/usr/local/opt/gettext/bin:$PATH"
+export PATH="/usr/local/go/bin/go:/usr/local/opt/gettext/bin:/usr/bin/:$PATH"
 export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 eval "$(pyenv init -)"
@@ -79,3 +82,7 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 #export PROMPT="$PROMPT"$ "==> "
+export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
+export PATH="/usr/local/bin:/usr/bin:$PATH"
+alias ctags='/usr/local/bin/ctags'
+alias rvm-prompt=$HOME/.rvm/bin/rvm-prompt

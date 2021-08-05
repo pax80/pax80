@@ -121,10 +121,12 @@ nnoremap <leader>H <C-w>H
 nnoremap <leader>J <C-w>J
 
 nnoremap ,post :r ~/development/base_diagrams/observer/support/postmortem.md<CR>
+nnoremap ,sre :r ~/development/base_diagrams/observer/sre-template.md<CR>
 nnoremap ,daily :r ~/development/daily/base.md<CR>
 nnoremap ,can :r ~/development/manager/ttt/base_assignemnt.md<CR>
 nnoremap ,feedback :r ~/development/manager/ttt/base_feedback.md<CR>
 nnoremap ,interview :r ~/development/manager/ttt/base_interview.md<CR>
+nnoremap ,puml :r ~/development/base_diagrams/base_file.puml<CR>
 
 " adding date
 "nmap <leader>p i<esc>:r!date +"%m-%d-%Y %H:%M"<esc>
@@ -133,4 +135,3 @@ nmap <leader>D "=strftime("%Y-%m-%d %H:%M")<CR>p
 imap <leader>d <esc>"=strftime("%Y-%m-%d")<CR>p
 imap <leader>D <esc>"=strftime("%Y-%m-%d %H:%M")<CR>pi
 
-vimgrep rizzo /Users/mircopaccusse/development/base_diagrams/**
