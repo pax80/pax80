@@ -110,6 +110,8 @@ nmap [h <Plug>GitGutterPrevHunk
 
 nmap <Leader>i :NERDTreeToggle<CR>
 nmap <Leader>x :%s/></>\r</g<CR>
+" running the command
+nnoremap ,cmd :.!bash<CR>
 
 inoremap jk <ESC>
  " ==============
@@ -120,9 +122,10 @@ nnoremap <leader>b <C-w>s<C-w>j
 nnoremap <leader>H <C-w>H
 nnoremap <leader>J <C-w>J
 
-nnoremap ,post :r ~/development/base_diagrams/observer/support/postmortem.md<CR>
-nnoremap ,sre :r ~/development/base_diagrams/observer/sre-template.md<CR>
+nnoremap ,post :r ~/development/user-guide/support/docs/support/postmortem.md<CR>
+nnoremap ,sre :r ~/development/impact-assesment/sre-template.md<CR>
 nnoremap ,daily :r ~/development/daily/base.md<CR>
+nnoremap ,hld :r ~/development/template-hld.md<CR>
 nnoremap ,can :r ~/development/manager/ttt/base_assignemnt.md<CR>
 nnoremap ,feedback :r ~/development/manager/ttt/base_feedback.md<CR>
 nnoremap ,interview :r ~/development/manager/ttt/base_interview.md<CR>
@@ -135,3 +138,6 @@ nmap <leader>D "=strftime("%Y-%m-%d %H:%M")<CR>p
 imap <leader>d <esc>"=strftime("%Y-%m-%d")<CR>p
 imap <leader>D <esc>"=strftime("%Y-%m-%d %H:%M")<CR>pi
 
+nnoremap <Leader>sp a<C-X>s
+nnoremap <Leader>n ]s
+nnoremap <Leader>p s[

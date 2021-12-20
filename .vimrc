@@ -34,6 +34,7 @@ source ~/.vim/startup/color.vim
 source ~/.vim/startup/mappings.vim
 " source ~/.vim/startup/settings.vim
 source ~/.vim/startup/commands.vim
+source ~/.vim/startup/custom-config.vim
 
 " Syntax-specific settings
 " source ~/.vim/startup/vim.vim
@@ -43,8 +44,8 @@ source ~/.vim/startup/commands.vim
 set guifont=Roboto\ Mono\ for\ Powerline:h15
 
 " define the withd of the columns and the text width
-set colorcolumn=80
-set textwidth=80
+set colorcolumn=120
+set textwidth=120
 set nocompatible
     if has("autocmd")
       filetype plugin indent on

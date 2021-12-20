@@ -1,0 +1,50 @@
+# Back end developer 
+
+Backend developers in our team are responsible for the full life cycle of data: 
+
+- collection:
+  - From third-party APIs
+  - Directly retrieving from systems 
+- processing:
+  - data manipulation
+  - cleansing
+- storing:
+  - and the subsequent processing and storing; as well as for that stored data's
+- presentation:
+  - data exposed via API
+  - Grafana dashboard creation
+
+Team is also responsible (jointly with the devops) for maintaining the infrastructure that makes the former possible.
+
+
+Python Skill:
+* in depth python 3 knowledge
+    * built in functions 
+    * standard library
+* Iterators
+* Context manager
+* Asynchronous programming
+- Frameworks:
+  - flask
+  - fastapi
+* Functional programming
+* Design patterns knowledge +
+* Testing framework
+ - unittest
+ - pytest
+
+Technology
+* Revisioning control 
+    * Git
+* Messaging queue knowledge
+    * Redis/kafka
+* Web server
+    * Nginx
+* Service manager
+    * Systemd
+* understanding of unix system
+* Databases:
+  - influxdb
+  - neo4j
+  - mysql
+* Docker

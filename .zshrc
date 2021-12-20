@@ -86,3 +86,4 @@ export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
 export PATH="/usr/local/bin:/usr/bin:$PATH"
 alias ctags='/usr/local/bin/ctags'
 alias rvm-prompt=$HOME/.rvm/bin/rvm-prompt
+alias obsidian='cd ~/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents/on\ the\ road/'
