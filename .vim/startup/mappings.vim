@@ -29,8 +29,8 @@ nmap <Leader>h :tabnew %:h<CR>
 " Zoom in
 imap <Leader>z <ESC>:vertical resize +80<CR>
 nmap <Leader>z :vertical resize +80<CR>
-imap <Leader>o <ESC>:vertical resize -80<CR>
-nmap <Leader>o :vertical resize -80<CR>
+imap <Leader>o <C-w>=
+nmap <Leader>o <C-w>=
 
 " quick quit
 "
@@ -114,13 +114,16 @@ nmap <Leader>x :%s/></>\r</g<CR>
 nnoremap ,cmd :.!bash<CR>
 
 inoremap jk <ESC>
- " ==============
- " split windows
+" ==============
+" split windows
 nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <leader>b <C-w>s<C-w>j
 " change to h
 nnoremap <leader>H <C-w>H
 nnoremap <leader>J <C-w>J
+
+" Copy into the clipboard when visual select :)
+vnoremap <leader>y "*y
 
 nnoremap ,post :r ~/development/user-guide/support/docs/support/postmortem.md<CR>
 nnoremap ,sre :r ~/development/impact-assesment/sre-template.md<CR>
@@ -130,6 +133,9 @@ nnoremap ,can :r ~/development/manager/ttt/base_assignemnt.md<CR>
 nnoremap ,feedback :r ~/development/manager/ttt/base_feedback.md<CR>
 nnoremap ,interview :r ~/development/manager/ttt/base_interview.md<CR>
 nnoremap ,puml :r ~/development/base_diagrams/base_file.puml<CR>
+
+" terminal remap
+
 
 " adding date
 "nmap <leader>p i<esc>:r!date +"%m-%d-%Y %H:%M"<esc>
@@ -141,3 +147,6 @@ imap <leader>D <esc>"=strftime("%Y-%m-%d %H:%M")<CR>pi
 nnoremap <Leader>sp a<C-X>s
 nnoremap <Leader>n ]s
 nnoremap <Leader>p s[
+
+" removed the jk as this is making escape too diffic
+tnoremap  <Leader>e  <C-\><C-n>

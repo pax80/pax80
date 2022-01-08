@@ -29,10 +29,7 @@ let NERDTreeDirArrows=1
 
 " Load custom settings
 source ~/.vim/startup/color.vim
-"source ~/.vim/startup/commands.vim
-"source ~/.vim/startup/functions.vim
 source ~/.vim/startup/mappings.vim
-" source ~/.vim/startup/settings.vim
 source ~/.vim/startup/commands.vim
 source ~/.vim/startup/custom-config.vim
 
@@ -57,8 +54,14 @@ au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md  set ft=markdo
 
 
 " Adjust the background with same config as the terminal
-hi! Normal ctermbg=NONE guibg=NONE
-hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
-hi! Visual cterm=reverse ctermbg=NONE
+" Change this if we want to get some more effecct
+"hi! Normal ctermbg=NONE guibg=NONE
+"hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
+"hi! Visual cterm=reverse ctermbg=NONE
 
 set shiftwidth=2
+
+if has('nvim')
+  highlight! link TermCursor Cursor
+  highlight! TermCursorNC guibg=red guifg=white ctermbg=1 ctermfg=15
+endif
