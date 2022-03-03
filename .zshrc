@@ -91,3 +91,4 @@ alias obsidian='cd ~/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents/on
 autoload -U edit-command-line
 zle -N edit-command-line
 bindkey '^x^e' edit-command-line
+export PATH="/usr/local/opt/bzip2/bin:$PATH"

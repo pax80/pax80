@@ -13,3 +13,6 @@ nmap <silent> [W <Plug>(ale_first)
 nmap <silent> [w <Plug>(ale_previous)
 nmap <silent> ]w <Plug>(ale_next)
 nmap <silent> ]W <Plug>(ale_last)
+
+hi! CursorLineNr   term=bold cterm=underline ctermfg=11 gui=bold guifg=Yellow
+hi! CursorLine cterm=underline guibg=Grey40

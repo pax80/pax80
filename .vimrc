@@ -43,6 +43,7 @@ set guifont=Roboto\ Mono\ for\ Powerline:h15
 " define the withd of the columns and the text width
 set colorcolumn=120
 set textwidth=120
+set cursorline
 set nocompatible
     if has("autocmd")
       filetype plugin indent on

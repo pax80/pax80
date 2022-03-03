@@ -133,6 +133,7 @@ nnoremap ,can :r ~/development/manager/ttt/base_assignemnt.md<CR>
 nnoremap ,feedback :r ~/development/manager/ttt/base_feedback.md<CR>
 nnoremap ,interview :r ~/development/manager/ttt/base_interview.md<CR>
 nnoremap ,puml :r ~/development/base_diagrams/base_file.puml<CR>
+nnoremap ,search :r ~/bin/search_template 
 
 " terminal remap
 
@@ -144,9 +145,14 @@ nmap <leader>D "=strftime("%Y-%m-%d %H:%M")<CR>p
 imap <leader>d <esc>"=strftime("%Y-%m-%d")<CR>p
 imap <leader>D <esc>"=strftime("%Y-%m-%d %H:%M")<CR>pi
 
+" Spelling suggest word, go to next or previos issue
 nnoremap <Leader>sp a<C-X>s
 nnoremap <Leader>n ]s
 nnoremap <Leader>p s[
 
 " removed the jk as this is making escape too diffic
 tnoremap  <Leader>e  <C-\><C-n>
+
+
+nnoremap <Leader>v :set virtualedit+=all<CR>
+nnoremap <Leader>V :set virtualedit-=all<CR>
