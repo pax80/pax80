@@ -127,7 +127,10 @@ vnoremap <leader>y "*y
 
 nnoremap ,post :r ~/development/user-guide/support/docs/support/postmortem.md<CR>
 nnoremap ,sre :r ~/development/impact-assesment/sre-template.md<CR>
-nnoremap ,daily :r ~/development/daily/base.md<CR>
+
+nnoremap ,daily :te cd ~/development/daily_docs/; ~/development/user-guide/venv/bin/mkdocs serve -a 127.0.0.1:1235<CR>
+nnoremap ,devops :te cd ~/development/user-guide/devops/; ~/development/user-guide/venv/bin/mkdocs serve -a 127.0.0.1:1236<CR>
+nnoremap ,support :te cd ~/development/user-guide/support/; ~/development/user-guide/venv/bin/mkdocs serve -a 127.0.0.1:1237<CR>
 nnoremap ,hld :r ~/development/template-hld.md<CR>
 nnoremap ,can :r ~/development/manager/ttt/base_assignemnt.md<CR>
 nnoremap ,feedback :r ~/development/manager/ttt/base_feedback.md<CR>

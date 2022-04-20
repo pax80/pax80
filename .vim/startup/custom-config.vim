@@ -2,7 +2,7 @@ let g:ale_sign_error                  = '>>'
 let g:ale_sign_warning                = '--'
 
 let g:ale_linters = {
-\   'markdown':      ['mdl', 'proselint'],
+\   'markdown':      ['mdl', 'proselint', 'write-good'],
 \}
 
 let g:ale_fixers = {
