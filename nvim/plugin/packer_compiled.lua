@@ -69,10 +69,55 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["coq.artifacts"] = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/coq.artifacts",
+    url = "https://github.com/ms-jpq/coq.artifacts"
+  },
+  ["coq.thirdparty"] = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/coq.thirdparty",
+    url = "https://github.com/ms-jpq/coq.thirdparty"
+  },
+  coq_nvim = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/coq_nvim",
+    url = "https://github.com/ms-jpq/coq_nvim"
+  },
+  ["lightline.vim"] = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/lightline.vim",
+    url = "https://github.com/itchyny/lightline.vim"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["onedark.nvim"] = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/onedark.nvim",
+    url = "https://github.com/navarasu/onedark.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["tokyonight.nvim"] = {
     loaded = true,
