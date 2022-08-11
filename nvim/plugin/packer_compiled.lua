@@ -69,6 +69,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ale = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/ale",
+    url = "https://github.com/dense-analysis/ale"
+  },
   ["coq.artifacts"] = {
     loaded = true,
     path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/coq.artifacts",
@@ -123,6 +128,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["vim-lsp-ale"] = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/vim-lsp-ale",
+    url = "https://github.com/rhysd/vim-lsp-ale"
   }
 }
 
