@@ -92,3 +92,13 @@ inoremap("<leader>t", "<esc>:Toc<CR>:vertical resize 50<CR>")
 
 nnoremap("<leader>bb", ":bw!<CR>")
 tnoremap("<leader>bb", "<C-\\><C-n>:bw!<CR>")
+
+-- Telescope
+--
+
+local live_grep_current_word = function()
+    telescope.grep_string({search = vim.fn.expand("<cword>")})
+end
+
+nnoremap("<leader>rg", telescope.live_grep)
+nnoremap("<leader>fw", live_grep_current_word)

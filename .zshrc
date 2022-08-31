@@ -91,5 +91,8 @@ alias obsidian='cd ~/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents/on
 autoload -U edit-command-line
 zle -N edit-command-line
 bindkey '^x^e' edit-command-line
-export PATH="/usr/local/opt/bzip2/bin:$PATH"
+export PATH="/usr/local/opt/bzip2/bin:$HOME/.poetry/env:$PATH"
 export GO111MODULE=on
+
+export LDFLAGS="/usr/local/opt/bzip2/bin:$PATH"
+export TERM=xterm-256color

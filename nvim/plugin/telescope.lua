@@ -1,7 +1,17 @@
 -- taking the fucntion back from the **keymap**
 local nnoremap = require("ooo.keymap").nnoremap
 
-nnoremap("<leader>ff","<cmd>lua require('telescope.builtin').find_files()<cr>")
-nnoremap("<leader>fg","<cmd>lua require('telescope.builtin').live_grep()<cr>")
-nnoremap("<leader>fb","<cmd>lua require('telescope.builtin').buffers()<cr>")
-nnoremap("<leader>fh","<cmd>lua require('telescope.builtin').help_tags()<cr>")
+local telescope = require('telescope.builtin')
+
+nnoremap("<leader>ff",telescope.find_files)
+nnoremap("<leader>fg",telescope.live_grep)
+nnoremap("<leader>fb",telescope.buffers)
+nnoremap("<leader>fh",telescope.help_tags)
+
+-- from Andrew advice will serch the word that we are on
+local live_grep_current_word = function()
+    telescope.grep_string({search = vim.fn.expand("<cword>")})
+end
+
+nnoremap("<leader>rg", telescope.live_grep)
+nnoremap("<leader>fw", live_grep_current_word)

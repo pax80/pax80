@@ -33,9 +33,11 @@ return require('packer').startup(function(use)
   use("ms-jpq/coq.thirdparty", { branch = "3p" })
 
   -- colorscheme
-  use("folke/tokyonight.nvim")
+  -- use("folke/tokyonight.nvim")
   use("itchyny/lightline.vim")
-  use("navarasu/onedark.nvim")
+  -- use("navarasu/onedark.nvim")
+  use("morhetz/gruvbox")
+  use("tomasr/molokai")
 
   -- markdown
   use("preservim/vim-markdown")
