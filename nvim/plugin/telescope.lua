@@ -15,3 +15,10 @@ end
 
 nnoremap("<leader>rg", telescope.live_grep)
 nnoremap("<leader>fw", live_grep_current_word)
+
+-- history
+nnoremap("<leader>ch", telescope.command_history)
+nnoremap("<leader>sh", telescope.search_history)
+nnoremap("<leader>ss", telescope.spell_suggest)
+
+
