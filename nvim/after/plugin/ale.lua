@@ -10,12 +10,13 @@ vim.g.ale_disable_lsp = 1
 vim.g.ale_linters = { 
   -- markdown = { 'mdl' } 
   -- markdown = { 'mdl', 'proselint' } 
-  markdown = { 'mdl', 'proselint', 'write-good' } 
+  markdown = { 'mdl', 'proselint', 'write-good', 'pandoc' } 
 }
 
--- vim.g.ale_fixers = {
---    '*' =          {'remove_trailing_lines', 'trim_whitespace'}
--- }
+vim.g.ale_fixers = {
+--    markdown = {'remove_trailing_lines', 'trim_whitespace'}
+    markdown = {'padoc'}
+}
 
 --vim.g.ale_sign_error = '>>'
 --vim.g.ale_sign_warning = '--'

@@ -1,9 +1,14 @@
 -- print(vim.cmd("echo &statusline"))
+--
+local prequel = 'Location::: '
 vim.g['lightline'] = {
   colorscheme = 'powerline',
   showtabline = 4,
   active = {
-    left = {{'mode', 'paste'}, {'readonly', 'filename', 'modified'}, { 'bufnum', 'example'}},
+    -- we have 3 groups first will have main color , 2nd wil hav white with backgroup gray
+    --left = {{'mode', 'paste'}, {'readonly', 'filename', 'modified'}, { 'bufnum', 'example', 'location'}},
+    --left = {{ 'bufnum', 'example', 'location'}, {'mode', 'paste'}, {'readonly', 'filename', 'modified'} },
+    left = {{'mode', 'paste'},{ 'bufnum', 'example'},  {'readonly', 'filename', 'modified'} },
 --    right = {{'filetype'}, { 'filetype', 'percent', 'lineinfo' }}
   },
   tabline = {
@@ -12,8 +17,13 @@ vim.g['lightline'] = {
 --    middle = {{'#dadada', '#121212', 253, 233}}
   },
   component = {
-       example =  '>>>>>   Simple is better than complex...'
---      example =  {{ 'bufnum', 'example' }}
+       example =  'Simple is better than complex...',
+       -- provide the location of the file now
+--       location =  vim.fn.expand('%:p') ,
+   -- location =  prequel.. " " ..vim.fn.getcwd()
+   --     location =  prequel.. " " ..vim.cmd("pwd")
+       -- path =  vim.fn.getcwd()
+--      example =  {{ 'bufnum', 'example' }[v
   },
   component_expand = {
     buffers = 'lightline#bufferline#buffers'
