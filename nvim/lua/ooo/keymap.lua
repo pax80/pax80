@@ -18,5 +18,6 @@ M.xnoremap = bind("x")
 M.inoremap = bind("i")
 -- t this is for the terminal mode
 M.tnoremap = bind("t")
+M.cnoremap = bind("c")
 
 return M

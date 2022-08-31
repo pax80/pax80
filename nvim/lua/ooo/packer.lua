@@ -4,6 +4,7 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
+  use("mzlogin/vim-markdown-toc")
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
@@ -35,4 +36,12 @@ return require('packer').startup(function(use)
   use("folke/tokyonight.nvim")
   use("itchyny/lightline.vim")
   use("navarasu/onedark.nvim")
+
+  -- markdown
+  use("preservim/vim-markdown")
+  --
+  -- go
+  --
+  use("fatih/vim-go")
+
 end)

@@ -4,6 +4,7 @@ local vnoremap = require("ooo.keymap").vnoremap
 local inoremap = require("ooo.keymap").inoremap
 local xnoremap = require("ooo.keymap").xnoremap
 local tnoremap = require("ooo.keymap").tnoremap
+local cnoremap = require("ooo.keymap").cnoremap
 
 local function t(str)
     return vim.api.nvim_replace_termcodes(str, true, true, true)
@@ -78,3 +79,16 @@ nnoremap("<leader>daily", ":te cd ~/development/daily_docs/; ~/development/user-
 nnoremap("<leader>devops", ":te cd ~/development/user-guide/devops/; ~/development/user-guide/venv/bin/mkdocs serve -a 127.0.0.1:1236<CR>")
 nnoremap("<leader>support", ":te cd ~/development/user-guide/support/; ~/development/user-guide/venv/bin/mkdocs serve -a 127.0.0.1:1237<CR>")
 
+-- search for todo in file
+
+nnoremap("<leader>todo", ":g/\\[ \\]/<CR>")
+inoremap("<leader>todo", "<esc>:g/\\[ \\]/<CR>")
+
+-- markdown
+nnoremap("<leader>t", ":Toc<CR>:vertical resize 50<CR>")
+inoremap("<leader>t", "<esc>:Toc<CR>:vertical resize 50<CR>")
+ 
+-- close buffer
+
+nnoremap("<leader>bb", ":bw!<CR>")
+tnoremap("<leader>bb", "<C-\\><C-n>:bw!<CR>")

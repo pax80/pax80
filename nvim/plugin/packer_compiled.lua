@@ -129,10 +129,25 @@ _G.packer_plugins = {
     path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
+  ["vim-go"] = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/vim-go",
+    url = "https://github.com/fatih/vim-go"
+  },
   ["vim-lsp-ale"] = {
     loaded = true,
     path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/vim-lsp-ale",
     url = "https://github.com/rhysd/vim-lsp-ale"
+  },
+  ["vim-markdown"] = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/vim-markdown",
+    url = "https://github.com/preservim/vim-markdown"
+  },
+  ["vim-markdown-toc"] = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/vim-markdown-toc",
+    url = "https://github.com/mzlogin/vim-markdown-toc"
   }
 }
 
