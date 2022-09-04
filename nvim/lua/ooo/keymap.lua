@@ -1,6 +1,7 @@
 local M = {}
 
 local function bind(op, outer_opts)
+
 	outer_opts= outer_opts or {noremap= true}
 	return function(lhs, rhs, opts)
 		opts = vim.tbl_extend("force", 
@@ -19,5 +20,7 @@ M.inoremap = bind("i")
 -- t this is for the terminal mode
 M.tnoremap = bind("t")
 M.cnoremap = bind("c")
+
+-- M.map_simple = map
 
 return M
