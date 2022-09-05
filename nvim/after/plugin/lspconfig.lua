@@ -56,6 +56,7 @@ local on_attach = function(client, bufnr)
   vim.keymap.set("n", "<space>ca", vim.lsp.buf.code_action, bufopts)
   vim.keymap.set("n", "gr", vim.lsp.buf.references, bufopts)
   vim.keymap.set("n", "<space>f", vim.lsp.buf.formatting, bufopts)
+  vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, bufopts)
   if client.resolved_capabilities.document_highlight then
       setup_highlight_under_cursor(bufnr)
   end
@@ -109,7 +110,7 @@ lsp["rust_analyzer"].setup(coq.lsp_ensure_capabilities{
 -- })
 
 lsp.gopls.setup{
-	cmd = {'gopls'},
+	-- cmd = {'gopls'},
 	-- for postfix snippets and analyzers
 	capabilities = capabilities,
 	    settings = {
@@ -123,6 +124,7 @@ lsp.gopls.setup{
 		    },
 	    },
 	on_attach = on_attach,
+
 }
 
   function goimports(timeoutms)

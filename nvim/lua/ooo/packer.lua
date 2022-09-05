@@ -53,4 +53,6 @@ return require('packer').startup(function(use)
   -- harpoon
   use("ThePrimeagen/harpoon")
 
+  -- vim-devicon
+  use("kyazdani42/nvim-web-devicons")
 end)

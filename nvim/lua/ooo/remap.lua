@@ -94,3 +94,5 @@ nnoremap("<leader>bb", ":bw!<CR>")
 tnoremap("<leader>bb", "<C-\\><C-n>:bw!<CR>")
 
 
+-- move to local file
+nnoremap("<leader>cd", ":cd %:p:h<CR>:pwd<CR>")
