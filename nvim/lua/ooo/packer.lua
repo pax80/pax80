@@ -36,7 +36,11 @@ return require('packer').startup(function(use)
 
   -- colorscheme
   -- use("folke/tokyonight.nvim")
-  use("itchyny/lightline.vim")
+  --  use("itchyny/lightline.vim")
+  use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
   -- use("navarasu/onedark.nvim")
   use("morhetz/gruvbox")
   use("tomasr/molokai")
