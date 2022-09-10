@@ -68,5 +68,9 @@ return require('packer').startup(function(use)
 
   use("L3MON4D3/LuaSnip")
   use("saadparwaiz1/cmp_luasnip")
+  -- plantuml
+  use("weirongxu/plantuml-previewer.vim")
+  use("tyru/open-browser.vim")
+  use("aklt/plantuml-syntax")
 
 end)

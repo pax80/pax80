@@ -21,6 +21,10 @@ local colors = {
   red      = '#ec5f67',
 }
 
+local breaker_section = function()
+    return '|'
+  end
+ 
 local conditions = {
   buffer_not_empty = function()
     return vim.fn.empty(vim.fn.expand('%:t')) ~= 1
@@ -82,7 +86,7 @@ end
 
 ins_left {
   function()
-    return '----▊'
+    return '>'
   end,
   color = { fg = colors.blue }, -- Sets highlighting of component
   padding = { left = 0, right = 1 }, -- We don't need space before this
@@ -146,9 +150,8 @@ ins_left {
   color = { fg = colors.bg, bg = colors.green, gui = 'bold' },
 }
 
-ins_left { 'location' }
-
-ins_left { 'progress', color = { fg = colors.bg, bg = colors.green } }
+-- ins_left { 'location' }
+-- ins_left { 'progress', color = { fg = colors.bg, bg = colors.green } }
 
 ins_left {
   'diagnostics',
@@ -227,9 +230,10 @@ ins_right {
 }
 
 ins_right {
-  function()
-    return '▊'
-  end,
+--   function()
+--     return '|'
+--   end,
+  breaker_section,
   color = { fg = colors.blue },
   padding = { left = 1},
 }
@@ -264,5 +268,17 @@ ins_right {
         return "| " ..os.date("%a %x") .." 🚀"
     end
 }
+
+ins_right {
+  breaker_section,
+  color = { fg = colors.green },
+  padding = { left = 1},
+}
+
+ins_right { 'location'}
+
+ins_right { 'progress',  color = { fg = colors.bg, bg = colors.green } }
+
+
 -- Now don't forget to initialize lualine
 lualine.setup(config)
