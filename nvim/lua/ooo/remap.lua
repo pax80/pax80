@@ -75,6 +75,8 @@ nnoremap("<leader>V",":set virtualedit-=all<CR>")
 
 -- handy template for sre and bring up mkdocs for servers
 nnoremap("<leader>sre", ":r ~/development/impact-assesment/sre-template.md<CR>")
+nnoremap("<leader>diag", ":r ~/development/impact-assesment/diagram-template.puml<CR>")
+nnoremap("<leader>network", ":r ~/development/impact-assesment/network-template.puml<CR>")
 nnoremap("<leader>daily", ":te cd ~/development/daily_docs/; ~/development/user-guide/venv/bin/mkdocs serve -a 127.0.0.1:1235<CR>")
 nnoremap("<leader>devops", ":te cd ~/development/user-guide/devops/; ~/development/user-guide/venv/bin/mkdocs serve -a 127.0.0.1:1236<CR>")
 nnoremap("<leader>support", ":te cd ~/development/user-guide/support/; ~/development/user-guide/venv/bin/mkdocs serve -a 127.0.0.1:1237<CR>")
@@ -95,4 +97,8 @@ tnoremap("<leader>bb", "<C-\\><C-n>:bw!<CR>")
 
 
 -- move to local file
-nnoremap("<leader>cd", ":cd %:p:h<CR>:pwd<CR>")
+nnoremap("<leader>cd", ":lcd %:p:h<CR>:pwd<CR>")
+
+
+-- plantuml open and save
+nnoremap("<leader>p", ":PlantumlOpen<CR>")
