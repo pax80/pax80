@@ -10,8 +10,6 @@ local function t(str)
     return vim.api.nvim_replace_termcodes(str, true, true, true)
 end
 
-nnoremap("<leader>pv", "<cmd>Ex<CR>")
-
 -- changing the way we use the arrows
 nnoremap("<down>", "ddp")
 nnoremap("<up>", "ddkP")
@@ -77,8 +75,10 @@ nnoremap("<leader>V",":set virtualedit-=all<CR>")
 nnoremap("<leader>sre", ":r ~/development/impact-assesment/sre-template.md<CR>")
 nnoremap("<leader>diag", ":r ~/development/impact-assesment/diagram-template.puml<CR>")
 nnoremap("<leader>network", ":r ~/development/impact-assesment/network-template.puml<CR>")
+nnoremap("<leader>host", ":r ~/development/impact-assesment/host.puml<CR>")
+nnoremap("<leader>service", ":r ~/development/impact-assesment/service.md<CR>")
 nnoremap("<leader>daily", ":te cd ~/development/daily_docs/; ~/development/user-guide/venv/bin/mkdocs serve -a 127.0.0.1:1235<CR>")
-nnoremap("<leader>devops", ":te cd ~/development/user-guide/devops/; ~/development/user-guide/venv/bin/mkdocs serve -a 127.0.0.1:1236<CR>")
+nnoremap("<leader>devops", ":te cd ~/development/devops-docs/; ~/development/devops-docs/venv/bin/mkdocs serve -a 127.0.0.1:1236<CR>")
 nnoremap("<leader>support", ":te cd ~/development/user-guide/support/; ~/development/user-guide/venv/bin/mkdocs serve -a 127.0.0.1:1237<CR>")
 
 -- search for todo in file
@@ -102,3 +102,5 @@ nnoremap("<leader>cd", ":lcd %:p:h<CR>:pwd<CR>")
 
 -- plantuml open and save
 nnoremap("<leader>p", ":PlantumlOpen<CR>")
+
+

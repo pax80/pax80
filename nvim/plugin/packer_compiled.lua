@@ -194,6 +194,16 @@ _G.packer_plugins = {
     path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["tree-sitter-lua"] = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/tree-sitter-lua",
+    url = "https://github.com/Azganoth/tree-sitter-lua"
+  },
+  ["vim-be-good"] = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/vim-be-good",
+    url = "https://github.com/ThePrimeagen/vim-be-good"
+  },
   ["vim-boxdraw"] = {
     loaded = true,
     path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/vim-boxdraw",
@@ -218,6 +228,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/vim-markdown-toc",
     url = "https://github.com/mzlogin/vim-markdown-toc"
+  },
+  ["vim-scala"] = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/vim-scala",
+    url = "https://github.com/derekwyatt/vim-scala"
   }
 }
 

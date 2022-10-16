@@ -73,4 +73,9 @@ return require('packer').startup(function(use)
   use("tyru/open-browser.vim")
   use("aklt/plantuml-syntax")
 
+  use("nvim-treesitter/nvim-treesitter")
+  use("Azganoth/tree-sitter-lua")
+  use("ThePrimeagen/vim-be-good")
+
+  use("derekwyatt/vim-scala")
 end)
