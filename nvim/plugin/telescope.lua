@@ -4,7 +4,7 @@ local nnoremap = require("ooo.keymap").nnoremap
 
 local telescope = require('telescope.builtin')
 
-require('telescope').load_extension('harpoon')
+-- require('telescope').load_extension('harpoon')
 
 nnoremap("<leader>ff",telescope.find_files)
 nnoremap("<leader>fg",telescope.live_grep)

@@ -103,4 +103,13 @@ nnoremap("<leader>cd", ":lcd %:p:h<CR>:pwd<CR>")
 -- plantuml open and save
 nnoremap("<leader>p", ":PlantumlOpen<CR>")
 
+-- test mars
+nnoremap("<>p", ":PlantumlOpen<CR>")
 
+-- Fast switch
+nnoremap("<C-j>", "`J")
+nnoremap("<C-k>", "`K")
+nnoremap("<C-l>", "`L")
+
+nnoremap("<leader>r", ":hi Normal ctermbg=NONE guibg=NONE<CR>")
+nnoremap("<leader>R", ":hi Normal guibg=#111111 ctermbg=black<CR>")

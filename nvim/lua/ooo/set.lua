@@ -13,3 +13,10 @@ vim.opt.expandtab = true
 
 vim.opt.showtabline = 3
 vim.g.mapleader = ","
+
+
+-- vim.opt.ctermbg = NULL
+-- vim.opt.guibg = NULL
+-- vim.highlight.create('ColorColumn', {ctermbg=NONE, guibg=NONE}, false)
+
+-- hi Normal ctermbg=NONE guibg=NONE

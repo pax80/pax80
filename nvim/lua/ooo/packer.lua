@@ -17,7 +17,7 @@ return require('packer').startup(function(use)
       'nvim-telescope/telescope.nvim', tag = '0.1.0',
       -- or                            , branch = '0.1.x',
       requires = { {'nvim-lua/plenary.nvim'} },
-      requires = { {'ThePrimeagen/harpoon'} }
+      -- requires = { {'ThePrimeagen/harpoon'} }
   }
   use("nvim-telescope/telescope-symbols.nvim")
 
@@ -54,8 +54,8 @@ return require('packer').startup(function(use)
   -- draw box
   use("gyim/vim-boxdraw")
 
-  -- harpoon
-  use("ThePrimeagen/harpoon")
+  ---- harpoon
+  --use("ThePrimeagen/harpoon")
 
   -- vim-devicon
   use("kyazdani42/nvim-web-devicons")
@@ -73,7 +73,7 @@ return require('packer').startup(function(use)
   use("tyru/open-browser.vim")
   use("aklt/plantuml-syntax")
 
-  use("nvim-treesitter/nvim-treesitter")
+  -- use("nvim-treesitter/nvim-treesitter")
   use("Azganoth/tree-sitter-lua")
   use("ThePrimeagen/vim-be-good")
 
