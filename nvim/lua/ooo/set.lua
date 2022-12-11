@@ -14,6 +14,7 @@ vim.opt.expandtab = true
 vim.opt.showtabline = 3
 vim.g.mapleader = ","
 
+vim.opt.laststatus = 3
 
 -- vim.opt.ctermbg = NULL
 -- vim.opt.guibg = NULL

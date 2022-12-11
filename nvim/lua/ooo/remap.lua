@@ -113,3 +113,9 @@ nnoremap("<C-l>", "`L")
 
 nnoremap("<leader>r", ":hi Normal ctermbg=NONE guibg=NONE<CR>")
 nnoremap("<leader>R", ":hi Normal guibg=#111111 ctermbg=black<CR>")
+
+
+-- burned :)
+--
+nnoremap("<leader>fu", ":CellularAutomaton make_it_rain<CR>")
+nnoremap("<leader>fy", ":CellularAutomaton game_of_life<CR>")
