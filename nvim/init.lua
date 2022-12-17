@@ -1,2 +1,2 @@
-require("ooo")
-print("hy from init.lua")
+require("mpaccusse")
+print("hello")
