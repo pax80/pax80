@@ -1,6 +1,4 @@
 vim.g.mapleader = ","
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-
 
 local function t(str)
     return vim.api.nvim_replace_termcodes(str, true, true, true)
