@@ -1,5 +1,0 @@
-require("ooo.set")
-require("ooo.remap")
-require("ooo.packer")
-require("ooo.autocmd")
-print("hi i am on the insite ooo side")

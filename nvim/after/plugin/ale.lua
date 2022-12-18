@@ -1,4 +1,3 @@
-local nnoremap = require("ooo.keymap").nnoremap
 ---- ale config
 -- only used for linting on save
 -- vim.g.ale_fix_on_save = 1
@@ -15,7 +14,7 @@ vim.g.ale_linters = {
 
 vim.g.ale_fixers = {
 --    markdown = {'remove_trailing_lines', 'trim_whitespace'}
-    markdown = {'padoc'}
+    markdown = {'pandoc'}
 }
 
 --vim.g.ale_sign_error = '>>'
@@ -26,10 +25,10 @@ vim.g.ale_fixers = {
 -- nmap <silent> ]w <Plug>(ale_next)
 -- nmap <silent> ]W <Plug>(ale_last)
 
-nnoremap("[W","<Plug>(ale_first)")
-nnoremap("[w","<Plug>(ale_previous)")
-nnoremap("]w","<Plug>(ale_next)")
-nnoremap("]W","<Plug>(ale_last)")
+vim.keymap.set("n","[W","<Plug>(ale_first)")
+vim.keymap.set("n","[w","<Plug>(ale_previous)")
+vim.keymap.set("n","]w","<Plug>(ale_next)")
+vim.keymap.set("n","]W","<Plug>(ale_last)")
 --- 
 -- hi! CursorLineNr   term=bold cterm=underline ctermfg=11 gui=bold guifg=Yellow
 -- hi! CursorLine cterm=underline guibg=Grey40

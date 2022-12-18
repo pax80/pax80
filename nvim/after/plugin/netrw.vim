@@ -1,5 +1,6 @@
 " from configuration found in https://github.com/mehalter/nvim/blob/main/after/plugin/netrw.vim
 if !exists('g:loaded_netrwPlugin') | finish | endif
+
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
