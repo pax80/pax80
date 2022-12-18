@@ -51,4 +51,23 @@ return require('packer').startup(function(use)
       'nvim-lualine/lualine.nvim',
       requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
+  -- plantuml
+  use("weirongxu/plantuml-previewer.vim")
+  use("tyru/open-browser.vim")
+  use("aklt/plantuml-syntax")
+
+  -- symbols 
+  use("nvim-telescope/telescope-symbols.nvim")
+
+  -- markdown
+  use('godlygeek/tabular')
+  use('preservim/vim-markdown')
+
+  -- ale linters
+  --
+  use("rhysd/vim-lsp-ale")
+  use("dense-analysis/ale")
+
+
+  -- maybe hale
 end)

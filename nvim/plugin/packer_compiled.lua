@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ale = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/ale",
+    url = "https://github.com/dense-analysis/ale"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -150,10 +155,25 @@ _G.packer_plugins = {
     path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
+  ["open-browser.vim"] = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/open-browser.vim",
+    url = "https://github.com/tyru/open-browser.vim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["plantuml-previewer.vim"] = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/plantuml-previewer.vim",
+    url = "https://github.com/weirongxu/plantuml-previewer.vim"
+  },
+  ["plantuml-syntax"] = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/plantuml-syntax",
+    url = "https://github.com/aklt/plantuml-syntax"
   },
   playground = {
     loaded = true,
@@ -171,6 +191,16 @@ _G.packer_plugins = {
     path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
   },
+  tabular = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/tabular",
+    url = "https://github.com/godlygeek/tabular"
+  },
+  ["telescope-symbols.nvim"] = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/telescope-symbols.nvim",
+    url = "https://github.com/nvim-telescope/telescope-symbols.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -185,6 +215,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-lsp-ale"] = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/vim-lsp-ale",
+    url = "https://github.com/rhysd/vim-lsp-ale"
+  },
+  ["vim-markdown"] = {
+    loaded = true,
+    path = "/Users/mircopaccusse/.local/share/nvim/site/pack/packer/start/vim-markdown",
+    url = "https://github.com/preservim/vim-markdown"
   }
 }
 
