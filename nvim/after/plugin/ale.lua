@@ -14,7 +14,7 @@ vim.g.ale_linters = {
 
 vim.g.ale_fixers = {
 --    markdown = {'remove_trailing_lines', 'trim_whitespace'}
-    markdown = {'padoc'}
+    markdown = {'pandoc'}
 }
 
 --vim.g.ale_sign_error = '>>'
