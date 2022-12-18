@@ -32,4 +32,11 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "120"
+vim.opt.cursorline = true
+vim.opt.cursorlineopt = "line"
+
+-- this should show the lower bannen always on the bottom
+vim.opt.showtabline = 3
+
+vim.opt.laststatus = 3

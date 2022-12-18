@@ -1,2 +1,3 @@
 require("mpaccusse.remap")
-print("hello from mpaccusse")
+-- require("mpaccusse.autocmd")
+require("mpaccusse.set")
