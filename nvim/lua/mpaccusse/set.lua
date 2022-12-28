@@ -1,4 +1,6 @@
-vim.opt.guicursor = ""
+print("here we go from set.lua")
+-- vim.opt.guicursor = ""
+vim.opt.laststatus = 3
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -39,4 +41,3 @@ vim.opt.cursorlineopt = "line"
 -- this should show the lower bannen always on the bottom
 vim.opt.showtabline = 3
 
-vim.opt.laststatus = 3

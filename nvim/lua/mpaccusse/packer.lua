@@ -68,6 +68,16 @@ return require('packer').startup(function(use)
   use("rhysd/vim-lsp-ale")
   use("dense-analysis/ale")
 
+  -- fun
+  use("Eandrju/cellular-automaton")
 
   -- maybe hale
+  use {
+      'phaazon/mind.nvim',
+      branch = 'v2.2',
+      requires = { 'nvim-lua/plenary.nvim' },
+      config = function()
+          require'mind'.setup()
+      end
+}
 end)

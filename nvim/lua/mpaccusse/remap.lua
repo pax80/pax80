@@ -1,3 +1,4 @@
+print("we are doing the mpaccusse.remap")
 vim.g.mapleader = ","
 
 local function t(str)
@@ -23,8 +24,10 @@ vim.keymap.set("n","g^", "gUiW")
 vim.keymap.set("n","gv", "guiW")
 
 -- save file
-vim.keymap.set("i","<leader>s", "<ESC>:w<CR>i")
-vim.keymap.set("n","<leader>s", ":w<CR>")
+-- vim.keymap.set("i","<leader>s", "<ESC>:w<CR>i")
+-- vim.keymap.set("n","<leader>s", ":w<CR>")
+vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
+
 
 -- escape
 
@@ -113,3 +116,9 @@ vim.keymap.set("n","<leader>R", ":hi Normal guibg=#111111 ctermbg=black<CR>")
 --
 vim.keymap.set("n","<leader>fu", ":CellularAutomaton make_it_rain<CR>")
 vim.keymap.set("n","<leader>fy", ":CellularAutomaton game_of_life<CR>")
+
+-- Git
+vim.keymap.set("n","<leader>gp", ":Git push<CR>")
+
+-- Mind
+vim.keymap.set("n","<leader>m", ":MindOpenMain<CR>")
