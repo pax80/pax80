@@ -76,7 +76,8 @@ vim.keymap.set("n","<leader>host", ":r ~/development/impact-assesment/host.puml<
 vim.keymap.set("n","<leader>service", ":r ~/development/impact-assesment/service.md<CR>")
 vim.keymap.set("n","<leader>daily", ":te cd ~/development/daily_docs/; ~/development/user-guide/venv/bin/mkdocs serve -a 127.0.0.1:1235<CR>")
 vim.keymap.set("n","<leader>devops", ":te cd ~/development/devops-docs/; ~/development/devops-docs/venv/bin/mkdocs serve -a 127.0.0.1:1236<CR>")
-vim.keymap.set("n","<leader>support", ":te cd ~/development/user-guide/support/; ~/development/user-guide/venv/bin/mkdocs serve -a 127.0.0.1:1237<CR>")
+vim.keymap.set("n","<leader>support", ":te cd ~/development/support-docs/; ~/development/user-guide/venv/bin/mkdocs serve -a 127.0.0.1:1237<CR>")
+
 
 -- search for todo in file
 
@@ -122,3 +123,11 @@ vim.keymap.set("n","<leader>gp", ":Git push<CR>")
 
 -- Mind
 vim.keymap.set("n","<leader>m", ":MindOpenMain<CR>")
+
+
+-- shortcut for the remap of the open file and cd to the folder
+vim.keymap.set("n","<leader>t", ":e ~")
+vim.keymap.set("n","<leader>c", ":cd ~")
+
+
+vim.keymap.set("n","<leader>ia", ":!pandoc -f markdown-implicit_figures -t pdf % -o ~/development/temporary/ia_%:t:r.pdf && open ~/development/temporary/ia_%:t:r.pdf<CR>")

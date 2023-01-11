@@ -23,6 +23,11 @@ vim.opt.undofile = true
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
+vim.opt.list = true
+vim.opt.syntax = whitespace
+
+-- to be fixed
+-- hi Search guibg=peru guifg=wheat
 
 vim.opt.termguicolors = true
 
