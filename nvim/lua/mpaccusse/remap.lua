@@ -126,8 +126,9 @@ vim.keymap.set("n","<leader>m", ":MindOpenMain<CR>")
 
 
 -- shortcut for the remap of the open file and cd to the folder
-vim.keymap.set("n","<leader>t", ":e ~")
-vim.keymap.set("n","<leader>c", ":cd ~")
+vim.keymap.set("n","<leader>t", ":e ~/")
+vim.keymap.set("n","<leader>c", ":cd ~/")
 
 
-vim.keymap.set("n","<leader>ia", ":!pandoc -f markdown-implicit_figures -t pdf % -o ~/development/temporary/ia_%:t:r.pdf && open ~/development/temporary/ia_%:t:r.pdf<CR>")
+--- using te pandoc to remap
+vim.keymap.set("n","<leader>ia", ":!pandoc -f markdown-implicit_figures % -o ~/development/temporary/ia_%:t:r.pdf --from markdown --template eisvogel --listing && open ~/development/temporary/ia_%:t:r.pdf<CR>")
