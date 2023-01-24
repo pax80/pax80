@@ -38,3 +38,5 @@ require('lualine').setup {
   inactive_winbar = {},
   extensions = {}
 }
+
+vim.opt.laststatus = 3

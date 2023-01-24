@@ -81,24 +81,8 @@ return require('packer').startup(function(use)
       end
   }
 
-  	use{
-		"iamcco/markdown-preview.nvim",
-        run = "cd app && npm install",
-		run = function()
-			vim.fn["mkdp#util#install"]()
-		end,
-		setup = function()
-			local g = vim.g
-			g.mkdp_auto_start = 1
-			g.mkdp_auto_close = 1
-			g.mkdp_page_title = "${name}.md"
-			g.mkdp_preview_options = {
-				disable_sync_scroll = 0,
-				disable_filename = 1,
-			}
-		end,
-		ft = "markdown",
-	}
+  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+
 
 
 

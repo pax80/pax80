@@ -24,8 +24,10 @@ vim.keymap.set("n","g^", "gUiW")
 vim.keymap.set("n","gv", "guiW")
 
 -- save file
--- vim.keymap.set("i","<leader>s", "<ESC>:w<CR>i")
--- vim.keymap.set("n","<leader>s", ":w<CR>")
+vim.keymap.set("i","<leader>w", "<ESC>:w<CR>i")
+vim.keymap.set("n","<leader>w", ":w<CR>")
+
+-- replace the word under the cursor
 vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
 
 
@@ -42,7 +44,6 @@ vim.keymap.set("n","cmd", ":.!bash<CR>")
 
 -- ==============
 -- split windows
-vim.keymap.set("n","<leader>w", "<C-w>v<C-w>l")
 vim.keymap.set("n","<leader>b", "<C-w>s<C-w>j")
 -- change to h
 vim.keymap.set("n","<leader>H","<C-w>H")
@@ -115,20 +116,24 @@ vim.keymap.set("n","<leader>R", ":hi Normal guibg=#111111 ctermbg=black<CR>")
 
 -- burned :)
 --
-vim.keymap.set("n","<leader>fu", ":CellularAutomaton make_it_rain<CR>")
-vim.keymap.set("n","<leader>fy", ":CellularAutomaton game_of_life<CR>")
 
 -- Git
 vim.keymap.set("n","<leader>gp", ":Git push<CR>")
 
 -- Mind
-vim.keymap.set("n","<leader>m", ":MindOpenMain<CR>")
+vim.keymap.set("n","<leader>m", ":MindOpenMain<CR>:vertical resize 60<CR>")
+vim.keymap.set("n","<leader>M", ":MindClose<CR>")
 
 
 -- shortcut for the remap of the open file and cd to the folder
-vim.keymap.set("n","<leader>t", ":e ~/")
+vim.keymap.set("n","<leader>a", ":e ~/")
 vim.keymap.set("n","<leader>c", ":cd ~/")
 
 
 --- using te pandoc to remap
 vim.keymap.set("n","<leader>ia", ":!pandoc -f markdown-implicit_figures % -o ~/development/temporary/ia_%:t:r.pdf --from markdown --template eisvogel --listing && open ~/development/temporary/ia_%:t:r.pdf<CR>")
+
+vim.keymap.set("n","<leader>mp", ":MarkdownPreview<CR>")
+
+vim.keymap.set("n","<leader>f","i<details><summary>ADD SUMMARY HERE</summary>\rDETAIL TO BE FOLDED\r</details><esc>")
+vim.keymap.set("i","<leader>f","<details><summary>ADD SUMMARY HERE</summary>\rDETAIL TO BE FOLDED\r</details><esc>o")
