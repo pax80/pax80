@@ -85,10 +85,6 @@ vim.keymap.set("n","<leader>support", ":te cd ~/development/support-docs/; ~/dev
 vim.keymap.set("n","<leader>todo", ":g/\\[ \\]/<CR>")
 vim.keymap.set("i","<leader>todo", "<esc>:g/\\[ \\]/<CR>")
 
--- markdown
-vim.keymap.set("n","<leader>t", ":Toc<CR>:vertical resize 50<CR>")
-vim.keymap.set("i","<leader>t", "<esc>:Toc<CR>:vertical resize 50<CR>")
- 
 -- close buffer
 
 vim.keymap.set("n","<leader>bb", ":bw!<CR>")
@@ -132,8 +128,25 @@ vim.keymap.set("n","<leader>c", ":cd ~/")
 
 --- using te pandoc to remap
 vim.keymap.set("n","<leader>ia", ":!pandoc -f markdown-implicit_figures % -o ~/development/temporary/ia_%:t:r.pdf --from markdown --template eisvogel --listing && open ~/development/temporary/ia_%:t:r.pdf<CR>")
+--vim.keymap.set("n","<leader>ia", ":!pandoc % -o ~/development/temporary/ia_%:t:r.pdf --from markdown --template eisvogel --listing && open ~/development/temporary/ia_%:t:r.pdf<CR>")
 
 vim.keymap.set("n","<leader>mp", ":MarkdownPreview<CR>")
 
 vim.keymap.set("n","<leader>f","i<details><summary>ADD SUMMARY HERE</summary>\rDETAIL TO BE FOLDED\r</details><esc>")
 vim.keymap.set("i","<leader>f","<details><summary>ADD SUMMARY HERE</summary>\rDETAIL TO BE FOLDED\r</details><esc>o")
+
+vim.keymap.set("n","<leader>note","i> [!Title to see]-<cr><esc>")
+vim.keymap.set("i","<leader>note","> [!Title to see]-<cr>")
+
+
+vim.keymap.set("i","<leader>gn","<esc>:Git grep -n -i ")
+vim.keymap.set("n","<leader>gn",":Git grep -n -i ")
+
+-- vim.keymap.set("n","<leader>cl",":%/s/\s\+$//e")
+-- vim.keymap.set("i","<leader>cl","<esc>%/s/\s\+$//e")
+
+vim.keymap.set("n","<leader>t",":Toc<CR>")
+vim.keymap.set("i","<leader>t","<esc>:Toc<CR>")
+
+vim.keymap.set("n","<leader>bash","i```bash<esc>}O```<esc>")
+vim.keymap.set("i","<leader>bashf","```bash<esc>}O```")

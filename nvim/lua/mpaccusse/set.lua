@@ -13,8 +13,8 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 
 
-vim.opt.wrap = false
-
+vim.opt.wrap = true
+vim.opt.linebreak = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
@@ -42,6 +42,15 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "120"
 vim.opt.cursorline = true
 vim.opt.cursorlineopt = "line"
+-- vim.cmd("hi CursorLine guibg=#a80700 ctermbg=500 ")
+--vim.cmd("hi CursorLine guibg=#603000 ctermbg=500 ")
+vim.cmd("hi CursorLine guibg=#252560 gui=underline")
+-- vim.cmd("hi CursorLine guibg=#203000 ctermbg=500 ")
+--vim.cmd("hi CursorLine guibg=#40E0D0 ctermbg=500 ")
+-- vim.api.nvim_set_hl(0, "Normal", {bg=Yellow })
+
+-- 107 55 00
+--  vim.api.nvim_set_hl(0, "CursorLine", { ctermbg=500, guibg=Yellow})
 
 -- this should show the lower bannen always on the bottom
 vim.opt.showtabline = 3
