@@ -67,10 +67,11 @@ background_opacity: 0.98
 font:
   # Normal (roman) font face
   normal:
-   family: Hack Nerd Font
-   #family: monospace
+    #family: New # white rabbit
+    family: Hack Nerd Font
+        #family: monospace
    #   style: Regular
-   #  bold:
+  #  bold:
    #    family: Menlo
    #    style: Bold
    #  italic:
