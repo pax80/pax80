@@ -62,7 +62,12 @@ vim.opt.fillchars = {
   verthoriz = "╋",
 }
 
-vim.api.nvim_set_hl(0, "WinSeparator", { fg = "orange", bold = true })
+
+--vim.api.nvim_set_hl(0, "WinSeparator", { fg = "orange", bold = true })
+
+function niceWindowBreak()
+    vim.api.nvim_set_hl(0, "WinSeparator", { fg = "orange", bold = true })
+end
 
 vim.opt.foldmethod = "manual"
 vim.g.NetrwIsOpen = 0
@@ -85,3 +90,4 @@ end
 vim.keymap.set("i", "<leader>nn", "<ESC>:lua ToogleFolder()<CR>i")
 vim.keymap.set("n", "<leader>nn", ":lua ToogleFolder()<CR>i")
 
+niceWindowBreak()

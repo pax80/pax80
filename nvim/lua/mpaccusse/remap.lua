@@ -122,4 +122,6 @@ vim.keymap.set("v", "<leader>f", ":fold<cr>")
 vim.keymap.set("n", "<leader>t", ":Toc<CR>:vertical resize 50<CR>")
 vim.keymap.set("i", "<leader>t", "<esc>:Toc<CR>:vertical resize 50<CR>")
 
-
+-- Copy into the clipboard when visual select :)
+vim.keymap.set("v", "<leader>y", '"*y')
+ 
