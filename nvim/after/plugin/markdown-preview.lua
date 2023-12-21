@@ -1,3 +1,6 @@
+vim.g.vim_markdown_folding_disabled = 1
+
+
 -- vim.g.mkdp_path_to_chrome = ""
 -- -- Path to the chrome or the command to open chrome (or other modern browsers).
 -- -- If set, g:mkdp_browserfunc would be ignored.
@@ -90,3 +93,4 @@ vim.g.mkdp_filetypes = { 'markdown' }
 -- set default theme (dark or light)
 -- By default the theme is define according to the preferences of the system
 vim.g.mkdp_theme = 'dark'
+

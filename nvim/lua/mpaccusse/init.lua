@@ -1,5 +1,3 @@
-print("this is mpaccusse init.lua")
-require("mpaccusse.remap")
--- require("mpaccusse.autocmd")
 require("mpaccusse.set")
+require("mpaccusse.remap")
 require("mpaccusse.autocmd")
