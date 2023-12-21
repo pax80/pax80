@@ -40,3 +40,4 @@ require('lualine').setup {
 }
 
 vim.opt.laststatus = 3
+
