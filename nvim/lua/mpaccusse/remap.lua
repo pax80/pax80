@@ -1,4 +1,8 @@
 print("Loading remap.lua")
+
+M = require("mpaccusse.custom")
+
+
 vim.g.mapleader = ","
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
@@ -122,6 +126,9 @@ vim.keymap.set("v", "<leader>f", ":fold<cr>")
 vim.keymap.set("n", "<leader>t", ":Toc<CR>:vertical resize 50<CR>")
 vim.keymap.set("i", "<leader>t", "<esc>:Toc<CR>:vertical resize 50<CR>")
 
--- Copy into the clipboard when visual select :)
-vim.keymap.set("v", "<leader>y", '"*y')
- 
+-- Copy into the clipboard when visual select :)lvim.keymap.set("v", "<leader>y", '"*y')
+
+
+-- vim.keymap.set("n", "<leader>_", ":echo '---------------' | echo 'hi'|marks JKL<CR>")
+vim.keymap.set("n", "<leader>_", ":lua M.listMarks()<CR>")
+vim.keymap.set("n", "<leader>nn", ":lua M.toogleFolder()<CR>")
