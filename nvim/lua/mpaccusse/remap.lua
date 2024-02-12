@@ -37,7 +37,6 @@ vim.keymap.set("t", "<leader>e", "<C-\\><C-n>")
 vim.keymap.set("n", "cmd", ":.!bash<CR>")
 
 -- split windows
-vim.keymap.set("n", "<leader>b", "<C-w>s<C-w>j")
 
 -- adding date
 --nmap <leader>p i<esc>:r!date +"%m-%d-%Y %H:%M"<esc>
@@ -115,8 +114,8 @@ vim.keymap.set("i", "<leader>fold", "<details><summary><esc>A</summary>\rDETAIL 
 
 vim.keymap.set("i", "<leader>gn", "<esc>:Git grep -n -i ")
 vim.keymap.set("n", "<leader>gn", ":Git grep -n -i ")
-vim.keymap.set("n", "<leader>bash", "i```bash<esc>}O```<esc>")
-vim.keymap.set("i", "<leader>bash", "```bash<esc>}O```")
+vim.keymap.set("n", "<leader>b", "i```bash<esc>}O```<esc>")
+vim.keymap.set("i", "<leader>b", "```bash<esc>}O```")
 -- Fold the visual selection
 vim.keymap.set("v", "<leader>f", ":fold<cr>")
 
@@ -126,9 +125,14 @@ vim.keymap.set("v", "<leader>f", ":fold<cr>")
 vim.keymap.set("n", "<leader>t", ":Toc<CR>:vertical resize 50<CR>")
 vim.keymap.set("i", "<leader>t", "<esc>:Toc<CR>:vertical resize 50<CR>")
 
--- Copy into the clipboard when visual select :)lvim.keymap.set("v", "<leader>y", '"*y')
+-- Copy into the clipboard when visual select :)l
+vim.keymap.set("v", "<leader>y", '"*y')
 
 
 -- vim.keymap.set("n", "<leader>_", ":echo '---------------' | echo 'hi'|marks JKL<CR>")
 vim.keymap.set("n", "<leader>_", ":lua M.listMarks()<CR>")
 vim.keymap.set("n", "<leader>nn", ":lua M.toogleFolder()<CR>")
+
+
+-- vim.keymap.set("n", "<leader>b", "<C-w>s<C-w>j")
+-- vim.keymap.set("v", "<leader>b", ":lua M.WriteSomething()<CR>")
