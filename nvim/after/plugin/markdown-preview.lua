@@ -20,7 +20,7 @@ vim.g.vim_markdown_folding_disabled = 1
 -- -- Set to 1, Vim will automatically close the current preview window when
 -- -- switching from one Markdown buffer to another.
 -- 
--- vim.g.mkdp_refresh_slow = 0
+vim.g.mkdp_refresh_slow = 1
 -- -- Set to 1, Vim will just refresh Markdown when saving the buffer or
 -- -- leaving from insert mode. With default 0, it will automatically refresh
 -- -- Markdown as you edit or move the cursor.
@@ -93,4 +93,5 @@ vim.g.mkdp_filetypes = { 'markdown' }
 -- set default theme (dark or light)
 -- By default the theme is define according to the preferences of the system
 vim.g.mkdp_theme = 'dark'
+-- vim.g.mkdp_theme = 'light'
 

@@ -56,7 +56,7 @@ vim.keymap.set("n", "<leader>v", ":set virtualedit=all<CR>")
 vim.keymap.set("n", "<leader>V", ":set virtualedit=none<CR>")
 
 -- handy template for sre and bring up mkdocs for servers
-vim.keymap.set("n", "<leader>sre", ":r ~/development/presentation/scientific.md<CR>")
+vim.keymap.set("n", "<leader>sre", ":r ~/development/postmortem/bin/scientific.md<CR>")
 vim.keymap.set("n", "<leader>diag", ":r ~/development/impact-assesment/diagram-template.puml<CR>")
 vim.keymap.set("n", "<leader>service", ":r ~/development/impact-assesment/service.md<CR>")
 
@@ -115,8 +115,8 @@ vim.keymap.set("i", "<leader>fold", "<details><summary><esc>A</summary>\rDETAIL 
 
 vim.keymap.set("i", "<leader>gn", "<esc>:Git grep -n -i ")
 vim.keymap.set("n", "<leader>gn", ":Git grep -n -i ")
-vim.keymap.set("n", "<leader>bash", "i```bash<esc>}O```<esc>")
-vim.keymap.set("i", "<leader>bash", "```bash<esc>}O```")
+vim.keymap.set("n", "<leader>h", "i```bash<esc>}O```<esc>")
+vim.keymap.set("i", "<leader>h", "```bash<esc>}O```")
 -- Fold the visual selection
 vim.keymap.set("v", "<leader>f", ":fold<cr>")
 
@@ -132,3 +132,8 @@ vim.keymap.set("i", "<leader>t", "<esc>:Toc<CR>:vertical resize 50<CR>")
 -- vim.keymap.set("n", "<leader>_", ":echo '---------------' | echo 'hi'|marks JKL<CR>")
 vim.keymap.set("n", "<leader>_", ":lua M.listMarks()<CR>")
 vim.keymap.set("n", "<leader>nn", ":lua M.toogleFolder()<CR>")
+
+
+vim.keymap.set("n", "<leader>x", ":set relativenumber<CR>")
+vim.keymap.set("n", "<leader>X", ":set norelativenumber<CR>")
+
