@@ -49,6 +49,7 @@ vim.keymap.set("i", "<leader>D", '<esc>"=strftime("%Y-%m-%d %H:%M")<CR>pi')
 vim.keymap.set("n", "<leader>sp", "a<C-X>s")
 vim.keymap.set("n", "<leader>n", "]s")
 vim.keymap.set("n", "<leader>p", "s[")
+vim.keymap.set("i", "<leader>p", "<C-r>\"")
 
 -- to be able to get on all the terinal for creating drawing
 vim.keymap.set("n", "<leader>v", ":set virtualedit=all<CR>")
@@ -86,6 +87,8 @@ vim.keymap.set("n", "<C-l>", "`L")
 vim.keymap.set("n", "<leader>r", ":hi Normal ctermbg=NONE guibg=NONE<CR>")
 vim.keymap.set("n", "<leader>R", ":hi Normal guibg=#111111 ctermbg=black<CR>")
 
+vim.keymap.set("n", "<leader>H", ":hi CursorLine guifg=black guibg=#bfac77 gui=underline<CR>")
+
 -- burned :)
 --
 
@@ -114,8 +117,8 @@ vim.keymap.set("i", "<leader>fold", "<details><summary><esc>A</summary>\rDETAIL 
 
 vim.keymap.set("i", "<leader>gn", "<esc>:Git grep -n -i ")
 vim.keymap.set("n", "<leader>gn", ":Git grep -n -i ")
-vim.keymap.set("n", "<leader>b", "i```bash<esc>}O```<esc>")
-vim.keymap.set("i", "<leader>b", "```bash<esc>}O```")
+vim.keymap.set("n", "<leader>h", "i```bash<esc>}O```<esc>")
+vim.keymap.set("i", "<leader>h", "```bash<esc>}O```")
 -- Fold the visual selection
 vim.keymap.set("v", "<leader>f", ":fold<cr>")
 
@@ -135,4 +138,13 @@ vim.keymap.set("n", "<leader>nn", ":lua M.toogleFolder()<CR>")
 
 
 -- vim.keymap.set("n", "<leader>b", "<C-w>s<C-w>j")
+vim.keymap.set("n", "<leader>b", "<C-w>s<C-w>j")
 -- vim.keymap.set("v", "<leader>b", ":lua M.WriteSomething()<CR>")
+--
+vim.keymap.set(
+  "n",
+  "<leader>m",
+  ":.4t.-1<CR>c3w"
+)
+
+

@@ -70,6 +70,8 @@ function niceWindowBreak()
 end
 
 vim.opt.foldmethod = "manual"
+vim.opt.foldcolumn = "2"
+
 vim.g.NetrwIsOpen = 0
 --
 function ToogleFolder()
