@@ -8,7 +8,7 @@ definition = {
 M.listMarks = function()
     local j = vim.api.nvim_get_mark("J",{})
     local k = vim.api.nvim_get_mark("K",{})
-    local l = vim.api.nvim_get_mark("M",{})
+    local l = vim.api.nvim_get_mark("L",{})
     print("J ->", j[definition["buffername"]])
     print("K ->", k[definition["buffername"]])
     print("L ->", l[definition["buffername"]])

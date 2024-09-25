@@ -126,7 +126,8 @@ vim.keymap.set("v", "<leader>f", ":fold<cr>")
 vim.keymap.set("n", "<leader>t", ":Toc<CR>:vertical resize 50<CR>")
 vim.keymap.set("i", "<leader>t", "<esc>:Toc<CR>:vertical resize 50<CR>")
 
--- Copy into the clipboard when visual select :)lvim.keymap.set("v", "<leader>y", '"*y')
+-- Copy into the clipboard when visual select :)l
+vim.keymap.set("v", "<leader>y", '"*y')
 
 
 -- vim.keymap.set("n", "<leader>_", ":echo '---------------' | echo 'hi'|marks JKL<CR>")

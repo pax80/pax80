@@ -14,6 +14,7 @@ vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.expandtab = true
+vim.opt.foldcolumn = "2"
 
 vim.opt.smartindent = true
 
@@ -67,6 +68,8 @@ vim.opt.fillchars = {
 
 function niceWindowBreak()
     vim.api.nvim_set_hl(0, "WinSeparator", { fg = "orange", bold = true })
+    vim.api.nvim_set_hl(0, "Folded", { fg = "orange", bold = true, bg="grey" })
+    vim.api.nvim_set_hl(0, "FoldColumn", { fg = "orange", bold = true})
 end
 
 vim.opt.foldmethod = "manual"
