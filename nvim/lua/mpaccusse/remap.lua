@@ -56,7 +56,7 @@ vim.keymap.set("n", "<leader>v", ":set virtualedit=all<CR>")
 vim.keymap.set("n", "<leader>V", ":set virtualedit=none<CR>")
 
 -- handy template for sre and bring up mkdocs for servers
-vim.keymap.set("n", "<leader>sre", ":r ~/development/presentation/scientific.md<CR>")
+vim.keymap.set("n", "<leader>sre", ":r ~/development/postmortem/bin/scientific.md<CR>")
 vim.keymap.set("n", "<leader>diag", ":r ~/development/impact-assesment/diagram-template.puml<CR>")
 vim.keymap.set("n", "<leader>service", ":r ~/development/impact-assesment/service.md<CR>")
 
@@ -150,4 +150,6 @@ vim.keymap.set(
   ":.4t.-1<CR>c3w"
 )
 
+vim.keymap.set("n", "<leader>x", ":set relativenumber<CR>")
+vim.keymap.set("n", "<leader>X", ":set norelativenumber<CR>")
 
