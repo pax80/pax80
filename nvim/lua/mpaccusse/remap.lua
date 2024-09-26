@@ -42,8 +42,8 @@ vim.keymap.set("n", "cmd", ":.!bash<CR>")
 --nmap <leader>p i<esc>:r!date +"%m-%d-%Y %H:%M"<esc>
 vim.keymap.set("n", "<leader>d", '"=strftime("%Y-%m-%d")<CR>p')
 vim.keymap.set("n", "<leader>D", '"=strftime("%Y-%m-%d %H:%M")<CR>p')
-vim.keymap.set("i", "<leader>d", '<esc>"=strftime("%Y-%m-%d")<CR>p')
-vim.keymap.set("i", "<leader>D", '<esc>"=strftime("%Y-%m-%d %H:%M")<CR>pi')
+vim.keymap.set("i", "<leader>d", ' <esc>h"=strftime("%Y-%m-%d")<CR>pi<esc>Ea ')
+vim.keymap.set("i", "<leader>D", '<esc>h"=strftime("%Y-%m-%d %H:%M")<CR>pi<esc>Ea ')
 
 -- Spelling suggest word, go to next or previos issue
 vim.keymap.set("n", "<leader>sp", "a<C-X>s")
