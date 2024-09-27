@@ -58,6 +58,7 @@ vim.keymap.set("n", "<leader>V", ":set virtualedit=none<CR>")
 -- handy template for sre and bring up mkdocs for servers
 vim.keymap.set("n", "<leader>sre", ":r ~/development/presentation/scientific.md<CR>")
 vim.keymap.set("n", "<leader>diag", ":r ~/development/impact-assesment/diagram-template.puml<CR>")
+vim.keymap.set("n", "<leader>hld", ":r ~/development/template-hld.md<CR>")
 vim.keymap.set("n", "<leader>service", ":r ~/development/impact-assesment/service.md<CR>")
 
 -- search for todo in file
