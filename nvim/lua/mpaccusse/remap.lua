@@ -89,8 +89,13 @@ vim.keymap.set("n", "<leader>r", ":hi Normal ctermbg=NONE guibg=NONE<CR>")
 vim.keymap.set("n", "<leader>R", ":hi Normal guibg=#111111 ctermbg=black<CR>")
 
 -- vim.keymap.set("n", "<leader>H", ":hi CursorLine guifg=black guibg=#bfac77 gui=underline<CR>")
+-- vim.keymap.set("n", "<leader>H", ":hi CursorLine guifg=black gui=underline<CR>")
+-- vim.keymap.set("n", "<leader>H", ":hi CursorLine gui=underline<CR>")
+-- vim.keymap.set("n", "<leader>H", ":hi CursorLine guifg=black guibg=#bfac77 gui=bold<CR>")
 vim.keymap.set("n", "<leader>H", ":hi CursorLine guifg=black guibg=#dfffec gui=bold<CR>")
 -- vim.keymap.set("n", "<leader>H", ":hi CursorLine guifg=black guibg=#e1c3ba gui=bold<CR>")
+
+-- lua vim.api.nvim_set_hl(0, 'Cursorline', {underline=true})
 -- vim.keymap.set("n", "<leader>H", ":hi CursorLine guifg=black guibg=#e1c3ba gui=bold<CR>")
 
 -- burned :)
