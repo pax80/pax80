@@ -62,22 +62,26 @@ vim.g.mkdp_echo_preview_url = 0
 -- default is empty
 vim.g.mkdp_browserfunc = ''
 -- options for markdown render                                        2023-02-19
-vim.g.mkdp_preview_options = {
-    mkit = {},
-    katex = {},
-    uml = { server = "https://plantuml.dev.sdil.aorta.net/plantuml/png" },
-    maid = {},
-    disable_sync_scroll = 0,
-    sync_scroll_type = 'middle',
-    hide_yaml_meta = 1,
-    sequence_diagrams = {},
-    flowchart_diagrams = {},
-    content_editable = {v = false},
-    disable_filename = 0,
-    toc = {},
-}
+--
+-- vim.g.mkdp_preview_options = {
+--     mkit = {},
+--     katex = {},
+--     uml = { server = "https://plantuml.dev.sdil.aorta.net/plantuml/png" },
+--     maid = {},
+--     disable_sync_scroll = 0,
+--     sync_scroll_type = 'middle',
+--     hide_yaml_meta = 1,
+--     sequence_diagrams = {},
+--     flowchart_diagrams = {},
+--     content_editable = {v = false},
+--     disable_filename = 0,
+--     toc = {},
+-- }
+
 -- use a custom markdown style must be absolute path-- like '/Users/username/markdown.css' or expand('~/markdown.css')
+--vim.g.mkdp_markdown_css = '/Users/mircopaccusse/.config/nvim/after/plugin/markdownpreview.css'
 vim.g.mkdp_markdown_css = ''
+
 -- use a custom highlight style must absolute path
 -- like '/Users/username/highlight.css' or expand('~/highlight.css')
 vim.g.mkdp_highlight_css = ''
@@ -92,5 +96,6 @@ vim.g.mkdp_filetypes = { 'markdown' }
 
 -- set default theme (dark or light)
 -- By default the theme is define according to the preferences of the system
-vim.g.mkdp_theme = 'dark'
+-- vim.g.mkdp_theme = 'dark'
+vim.g.mkdp_theme = 'light'
 

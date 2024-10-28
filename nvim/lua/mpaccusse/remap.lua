@@ -92,7 +92,9 @@ vim.keymap.set("n", "<leader>R", ":hi Normal guibg=#111111 ctermbg=black<CR>")
 -- vim.keymap.set("n", "<leader>H", ":hi CursorLine guifg=black gui=underline<CR>")
 -- vim.keymap.set("n", "<leader>H", ":hi CursorLine gui=underline<CR>")
 -- vim.keymap.set("n", "<leader>H", ":hi CursorLine guifg=black guibg=#bfac77 gui=bold<CR>")
-vim.keymap.set("n", "<leader>H", ":hi CursorLine guifg=black guibg=#dfffec gui=bold<CR>")
+-- vim.keymap.set("n", "<leader>H", ":hi CursorLine guifg=black guibg=#dfffec gui=bold<CR>")
+vim.keymap.set("n", "<leader>H", ":hi CursorLine guifg=white guibg=black gui=underline<CR>")
+
 -- vim.keymap.set("n", "<leader>H", ":hi CursorLine guifg=black guibg=#e1c3ba gui=bold<CR>")
 
 -- lua vim.api.nvim_set_hl(0, 'Cursorline', {underline=true})
@@ -157,3 +159,6 @@ vim.keymap.set(
 )
 
 
+-- found samee column
+-- vim.keymap.set("n", "col", ":call search('\%\' . virtcol('.') . 'v\S', 'W')<CR>")
+-- vim.keymap.set("n", "pol", ":call search('\%\' . virtcol('.') . 'v\S', 'bW')<CR>")
